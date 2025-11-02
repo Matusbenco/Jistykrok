@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./assets/8033cbe10cb75436.css">
+    
+    <title>Jistý Krok - Bezpečný vstup do vany za 1 den</title>
+    <meta name="description" content="Přeměníme vaši stávající vanu na bezpečný sprchový kout. Hotovo za 1 den, bez bourání a nepořádku. Získejte nezávaznou nabídku.">
+    
+    <meta property="og:title" content="Jistý Krok - Bezpečný vstup do vany za 1 den">
+    <meta property="og:description" content="Přeměníme vaši stávající vanu na bezpečný sprchový kout. Hotovo za 1 den, bez bourání a nepořádku. Získejte nezávaznou nabídku.">
+    <meta property="og:image" content="https://images.pexels.com/photos/7614405/pexels-photo-7614405.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jistý Krok - Bezpečný vstup do vany za 1 den">
+    <meta name="twitter:description" content="Přeměníme vaši stávající vanu na bezpečný sprchový kout. Hotovo za 1 den, bez bourání a nepořádku. Získejte nezávaznou nabídku.">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/7614405/pexels-photo-7614405.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940">
+<style>
+            @keyframes marquee {
+                0%   { transform: translateX(0%); } /* Štart na 0 (okamžite viditeľné) */
+                100% { transform: translateX(-50%); } /* Koniec v polovici (kde začína druhý text) */
+            }
+            .animate-marquee {
+                display: inline-block;
+                /* padding-left: 100%;  <-- TOTO SME ZMAZALI (spôsobovalo oneskorenie) */
+                animation: marquee 40s linear infinite; /* Zdvojnásobený čas kvôli 2x textu */
+                white-space: nowrap; /* Udrží text v jednom riadku */
+            }
+            /* Inicialne skrytie popupu */
+            #popup-overlay {
+                display: none;
+            }
+        </style>
+
+  </head>
+
+<body class="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable antialiased">
+<div class="bg-primary text-white text-center py-3 px-4 font-semibold shadow-md z-50 relative overflow-hidden whitespace-nowrap">
+    <div class="max-w-6xl mx-auto">
+        <span class="animate-marquee">
+            Akce: Bezpečnostní madlo v hodnotě 100€ ZDARMA ke každé instalaci! Platí jen do konce měsíce. &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Akce: Bezpečnostní madlo v hodnotě 100€ ZDARMA ke každé instalaci! Platí jen do konce měsíce.
+        </span>
+        
+    </div>
+</div>
+    <div class="min-h-screen bg-white">
+       <header class="sticky top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg border-b">
+            <div class="max-w-6xl mx-auto px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="./assets/logo_istykrok.png" alt="Jistý Krok Logo" class="hover:scale-10 transition-transform duration-300 cursor-pointer" style="height: 6rem;" data-scroll-to="hero">
+                    </div>
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <button class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 hover:scale-105 transform" data-scroll-to="solution">Řešení</button>
+                        <button class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 hover:scale-105 transform" data-scroll-to="benefits">Výhody</button>
+                        <button class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 hover:scale-105 transform" data-scroll-to="process">Proces</button>
+                        <button class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 hover:scale-105 transform" data-scroll-to="gallery">Galerie</button>
+                        <button class="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl animate-pulse-slow" data-scroll-to="contact">Kontakt</button>
+                    </nav>
+                    <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200" id="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6 text-gray-700" aria-hidden="true">
+                            <path d="M4 5h16"></path>
+                            <path d="M4 12h16"></path>
+                            <path d="M4 19h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 animate-fade-in">
+                    <nav class="flex flex-col space-y-4 pt-4">
+                        <button class="text-left text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-2" data-scroll-to="solution">Řešení</button>
+                        <button class="text-left text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-2" data-scroll-to="benefits">Výhody</button>
+                        <button class="text-left text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-2" data-scroll-to="process">Proces</button>
+                        <button class="text-left text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-2" data-scroll-to="gallery">Galerie</button>
+                        <button class="text-left bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-lg" data-scroll-to="contact">Kontakt</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section id="hero" class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 px-4 overflow-hidden pt-20">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40" style="background-image:url(./assets/vana5.jpg)"></div>
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+                <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            </div>
+            <div class="relative z-10 max-w-6xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl animate-fade-in">Přestaňte riskovat při každém sprchování.</h1>
+               <p class="text-xl md:text-2xl text-white/95 mb-4 max-w-4xl mx-auto drop-shadow-lg animate-fade-in-delay">Přeměníme vaši stávající vanu na bezpečný a pohodlný sprchový kout.</p>
+<p class="text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto drop-shadow-lg animate-fade-in-delay">Hotovo za 1 den. Bez bourání a nepořádku.</p>
+                <div class="mb-8 animate-fade-in-delay-2">
+                    <div class="inline-flex items-center gap-3 bg-white/95 backdrop-blur-sm rounded-2xl px-8 py-4 shadow-2xl hover:scale-105 transition-all duration-300 hover:shadow-3xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-8 w-8 text-primary animate-pulse" aria-hidden="true">
+                            <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                        </svg>
+                        <div class="text-left">
+                            <div class="text-sm text-gray-600 font-medium">Volejte ihned</div>
+                            <div class="text-3xl font-bold text-gray-900 tracking-wide">+421 905 351 100</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-3">
+                    <button class="inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl animate-pulse-slow" data-scroll-to="contact">Získat nezávaznou nabídku</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-slate-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6 animate-fade-in">Jeden špatný krok může změnit všechno.</h2>
+                <p class="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-in-delay">Vysoký okraj vany je nejčastější příčinou pádů seniorů v domácnosti. Strach z překonávání této bariéry vede ke ztrátě samostatnosti a snižuje kvalitu života. Kompletní rekonstrukce koupelny je přitom drahá (často 4000 € - 6000 €) a trvá týdny.</p>
+                <div class="mt-8 flex justify-center animate-fade-in-delay-2">
+                    <div class="w-24 h-24 bg-red-100 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 animate-pulse-slow">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center">
+                            <span class="text-white text-2xl font-bold">⚠</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="animate-fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">Naše řešení: Extra široký a bezpečný vstup</h2>
+                        <p class="text-lg text-muted-foreground leading-relaxed mb-6">Místo drahé rekonstrukce vám do vany vyřežeme a vodotěsně nainstalujeme elegantní, nízký vstup. Toto nejsou dvířka – je to trvalá a pohodlná přestavba na sprchový kout, která poskytuje mnohem širší a pohodlnější přístup.</p>
+                        <p class="text-lg font-semibold text-primary">Získáte maximální bezpečí za zlomek ceny.</p>
+                    </div>
+                    <div class="relative animate-fade-in-delay">
+                        <img src="./assets/P.jpg" alt="Elegantní nízký vstup do vany" class="rounded-lg shadow-xl w-full hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-16 px-4 bg-slate-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-foreground mb-12 animate-fade-in">Bezpečí bez kompromisů.</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="rounded-lg bg-card text-card-foreground text-center border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-fade-in group">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300 group-hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-8 w-8 text-primary group-hover:animate-pulse" aria-hidden="true">
+                                    <path d="M12 6v6l4 2"></path>
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold tracking-tight text-xl">Hotovo za 1 den</h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground">Montáž trvá jen 4-5 hodin. Druhý den se můžete bezpečně sprchovat.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-card text-card-foreground text-center border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-fade-in-delay group">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300 group-hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piggy-bank h-8 w-8 text-primary group-hover:animate-pulse" aria-hidden="true">
+                                    <path d="M11 17h3v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a3.16 3.16 0 0 0 2-2h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-1a5 5 0 0 0-2-4V3a4 4 0 0 0-3.2 1.6l-.3.4H11a6 6 0 0 0-6 6v1a5 5 0 0 0 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z"></path>
+                                    <path d="M16 10h.01"></path>
+                                    <path d="M2 8v1a2 2 0 0 0 2 2h1"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold tracking-tight text-xl">Šetří tisíce Eur</h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground">Naše řešení je až o 90 % levnější než kompletní rekonstrukce koupelny.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-card text-card-foreground text-center border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-fade-in-delay-2 group">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300 group-hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-8 w-8 text-primary group-hover:animate-pulse" aria-hidden="true">
+                                    <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                                    <path d="M20 2v4"></path>
+                                    <path d="M22 4h-4"></path>
+                                    <circle cx="4" cy="20" r="2"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold tracking-tight text-xl">Bez bourání a nepořádku</h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground">Celá instalace probíhá čistě, bez poškození obkladů a nepořádku ve vašem bytě.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-card text-card-foreground text-center border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-fade-in-delay-3 group">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300 group-hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler h-8 w-8 text-primary group-hover:animate-pulse" aria-hidden="true">
+                                    <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path>
+                                    <path d="m14.5 12.5 2-2"></path>
+                                    <path d="m11.5 9.5 2-2"></path>
+                                    <path d="m8.5 6.5 2-2"></path>
+                                    <path d="m17.5 15.5 2-2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold tracking-tight text-xl">Extra široký vstup</h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="text-muted-foreground">Naše řešení je širší a pohodlnější než běžná dvířka, ideální pro bezpečný krok.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-foreground mb-12 animate-fade-in">Váš nový vstup do vany ve 3 krocích</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6 items-start animate-fade-in group hover:scale-105 transition-transform duration-300">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:animate-pulse">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Bezplatná prohlídka</h3>
+                            <p class="text-muted-foreground">Zavolejte nám nebo vyplňte formulář. Přijedeme k vám, zaměříme vanu, ukážeme vzorky a připravíme finální cenovou nabídku. Zcela zdarma a nezávazně.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start animate-fade-in-delay group hover:scale-105 transition-transform duration-300">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:animate-pulse">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Rychlá montáž</h3>
+                            <p class="text-muted-foreground">Náš certifikovaný technik přijede v dohodnutý termín. Samotná montáž trvá jen pár hodin. Precizně vyřežeme otvor a vodotěsně osadíme vstupní díl.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start animate-fade-in-delay-2 group hover:scale-105 transition-transform duration-300">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:animate-pulse">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Bezpečné sprchování</h3>
+                            <p class="text-muted-foreground">Po 24 hodinách je vše připraveno k používání. Okamžitě získáváte bezpečnost, pohodlí a zpět svou samostatnost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-16 px-4 bg-slate-50">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-foreground mb-12 animate-fade-in">Podívejte se na naše proměny</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            
+            <div class="rounded-lg bg-card text-card-foreground overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fade-in">
+                <div class="relative overflow-hidden">
+                    <img src="./assets/premena1.png" alt="Před a po transformaci vany" class="w-full group-hover:scale-110 transition-transform duration-700">
+                    <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent text-primary-foreground hover:bg-primary/80 absolute top-2 left-1/2 -translate-x-1/2 bg-red-500 group-hover:animate-pulse">PŘED → PO</div>
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                </div>
+            </div>
+            
+            <div class="rounded-lg bg-card text-card-foreground overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fade-in-delay">
+                <div class="relative overflow-hidden">
+                    <img src="./assets/premena2.png" alt="Před a po transformaci vany" class="w-full group-hover:scale-110 transition-transform duration-700">
+                    <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent text-primary-foreground hover:bg-primary/80 absolute top-2 left-1/2 -translate-x-1/2 bg-red-500 group-hover:animate-pulse">PŘED → PO</div>
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                </div>
+            </div>
+
+            <div class="rounded-lg bg-card text-card-foreground overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fade-in-delay-2">
+                <div class="relative overflow-hidden">
+                    <img src="./assets/premena3.png" alt="Před a po transformaci vany" class="w-full group-hover:scale-110 transition-transform duration-700">
+                    <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent text-primary-foreground hover:bg-primary/80 absolute top-2 left-1/2 -translate-x-1/2 bg-red-500 group-hover:animate-pulse">PŘED → PO</div>
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                </div>
+            </div>
+
+            <div class="rounded-lg bg-card text-card-foreground overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fade-in-delay-3">
+                <div class="relative overflow-hidden">
+                    <img src="./assets/premena4.png" alt="Před a po transformaci vany" class="w-full group-hover:scale-110 transition-transform duration-700">
+                    <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent text-primary-foreground hover:bg-primary/80 absolute top-2 left-1/2 -translate-x-1/2 bg-red-500 group-hover:animate-pulse">PŘED → PO</div>
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+              
+
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-foreground mb-12 animate-fade-in">Co říkají naši spokojení zákazníci (a jejich rodiny)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="rounded-lg bg-card text-card-foreground border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-fade-in group">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <div class="flex gap-1 mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <p class="text-muted-foreground text-base italic">"Konečně mám klid v duši. Maminka se už nebojí jít sama do vany. Montáž byla neuvěřitelně rychlá a čistá. Doporučuji všemi deseti."</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="font-semibold">- Anna M., (dcera)</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-card text-card-foreground border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-fade-in-delay group">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <div class="flex gap-1 mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <p class="text-muted-foreground text-base italic">"Získal jsem zpět svou samostatnost. Ten široký vstup je k nezaplacení, mnohem lepší než ta úzká dvířka, co má soused. Výborná práce."</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="font-semibold">- Pan Jozef K.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-card text-card-foreground border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-fade-in-delay-2 group">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <div class="flex gap-1 mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5 fill-yellow-400 text-yellow-400 group-hover:animate-pulse" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <p class="text-muted-foreground text-base italic">"Hledali jsme řešení pro otce po operaci. Tohle bylo nejlepší rozhodnutí. Profesionální přístup od prvního telefonu až po realizaci."</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <p class="font-semibold">- Martin V., (syn)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 px-4 bg-primary/5">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">Vraťte bezpečí do vaší koupelny.</h2>
+                    <p class="text-lg text-muted-foreground max-w-2xl mx-auto">Neriskujte zbytečný pád. Získejte zpět svou nezávislost ještě dnes. Kontaktujte nás a my vám připravíme nezávaznou nabídku šitou na míru vaší vaně.</p>
+                </div>
+                <div class="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto border-0 shadow-xl hover:shadow-2xl transition-all duration-300 animate-fade-in">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="font-semibold tracking-tight text-center text-2xl">Kontaktní formulář</h3>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <form class="space-y-6" action="https://formspree.io/f/xyzjaepv" method="POST">
+                            <div>
+                                <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="name">Jméno *</label>
+                                <input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 hover:border-primary/50 focus:border-primary transition-colors duration-200" id="name" required="" name="name">
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="phone">Telefon *</label>
+                                <input type="tel" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 hover:border-primary/50 focus:border-primary transition-colors duration-200" id="phone" required="" name="phone">
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="city">Město</label>
+                                <input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 hover:border-primary/50 focus:border-primary transition-colors duration-200" id="city" name="city">
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="message">Vaše zpráva (Volitelné)</label>
+                                <textarea class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 hover:border-primary/50 focus:border-primary transition-colors duration-200" id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 w-full bg-primary hover:bg-primary/90 text-white py-3 text-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-slow" type="submit">Chci bezplatnou cenovou nabídku</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-slate-900 text-white py-12 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="animate-fade-in">
+                        <img src="./assets/logo_istykrok.png" alt="Jistý Krok Logo" class="hover:scale-10 transition-transform duration-300 cursor-pointer" style="height: 6rem;" data-scroll-to="hero">
+                        <p class="text-slate-300">Profesionální přestavba van na bezpečné sprchové kouty. Vaše bezpečnost je naše priorita.</p>
+                    </div>
+                    <div class="animate-fade-in-delay">
+                        <h4 class="text-lg font-semibold mb-4">Kontakt</h4>
+                        <div class="space-y-2 text-slate-300">
+                            <div class="flex items-center gap-2 hover:text-white transition-colors duration-200 group">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 group-hover:animate-pulse" aria-hidden="true">
+                                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                                </svg>
+                                <span class="text-xl font-bold">+421 905 351 100</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-white transition-colors duration-200 group">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-4 w-4 group-hover:animate-pulse" aria-hidden="true">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                </svg>
+                                <span>jistykrok@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animate-fade-in-delay-2">
+                        <h4 class="text-lg font-semibold mb-4">Informace</h4>
+                        <div class="space-y-2">
+                            <a href="./ochrana-udaju.html" class="text-slate-300 hover:text-white block transition-colors duration-200 hover:underline">Zásady ochrany osobních údajů</a>
+                            <p class="text-slate-400 text-sm">IČO: 55530966<br>Údaje dostupné ve veřejném rejstříku.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400 animate-fade-in-delay-3">
+                    <p>© 2024 Jistý Krok. Všechna práva vyhrazena.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // --- KÓD PRE POPUP ZAČIATOK ---
+        const popupOverlay = document.getElementById('popup-overlay');
+        const popupModal = document.getElementById('popup-modal');
+        const popupCloseBtn = document.getElementById('popup-close');
+        const popupContactBtn = document.getElementById('popup-contact-btn');
+
+        const openPopup = () => {
+            if (popupOverlay) popupOverlay.style.display = 'flex';
+        };
+
+        const closePopup = () => {
+            if (popupOverlay) popupOverlay.style.display = 'none';
+        };
+
+        // Zobraziť popup po 2 sekundách (2000ms)
+        setTimeout(openPopup, 2000);
+
+        // Priradenie udalostí
+        if (popupCloseBtn) popupCloseBtn.addEventListener('click', closePopup);
+        // Zatvorí sa aj kliknutím na tmavé pozadie
+        if (popupOverlay) popupOverlay.addEventListener('click', closePopup);
+        // Zabráni zatvoreniu pri kliku dovnútra modálu (okna)
+        if (popupModal) popupModal.addEventListener('click', (e) => e.stopPropagation()); 
+        // Tlačidlo v popupe tiež zatvorí popup (okrem scrollovania)
+        if (popupContactBtn) popupContactBtn.addEventListener('click', closePopup);
+        // --- KÓD PRE POPUP KONIEC ---
+
+
+                   // Plynulé scrollovanie pre všetky tlačidlá s atribútom 'data-scroll-to'
+            const scrollButtons = document.querySelectorAll('[data-scroll-to]');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+            scrollButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('data-scroll-to');
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // Vypočítame pozíciu cieľového elementu a odpočítame výšku hlavičky (header)
+                        const headerOffset = document.querySelector('header').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Ak je mobilné menu otvorené, zatvoríme ho
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Funkcionalita pre mobilné menu
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+<div id="popup-overlay" class="fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-4">
+    <div id="popup-modal" class="relative bg-white rounded-lg shadow-2xl max-w-md overflow-hidden">
+
+        <button id="popup-close" class="absolute top-3 right-3 text-gray-400 hover:text-gray-800 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+        </button>
+
+        <img src="./assets/madlo.jpg" alt="Akční banner" class="w-full object-cover" style="height: 12rem;">
+
+        <div class="p-6 text-center">
+            <h3 class="text-2xl font-bold text-foreground mb-3">Limitovaná Akce!</h3>
+            <p class="text-muted-foreground mb-4">
+                Objednejte si instalaci tento měsíc a získejte od nás
+                <strong class="text-primary">bezpečnostní madlo v hodnotě 100€ ZDARMA!</strong>
+            </p>
+
+            <button data-scroll-to="contact" id="popup-contact-btn" class="inline-flex items-center justify-center whitespace-nowrap font-medium h-11 rounded-md bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl animate-pulse-slow w-full">
+                Chci madlo zdarma
+            </button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
