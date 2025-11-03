@@ -27,8 +27,9 @@
                 animation: marquee 40s linear infinite;
                 white-space: nowrap;
             }
-
-        /* --- Nové štýly pre Pop-up Banner (Inšpirácia CarBox) --- */
+ 
+       /* --- Nové štýly pre Pop-up Banner (Vylepšená grafika) --- */
+            /* Animácie zostávajú rovnaké, len ich zopakujeme pre prehľadnosť */
             @keyframes popupSlideIn {
                 from { 
                     transform: scale(0.9); 
@@ -51,79 +52,155 @@
                 }
             }
 
-            /* Toto je hlavný overlay */
             #popup-overlay {
-                display: none; /* Skryté v základe */
+                display: none; 
                 position: fixed;
                 z-index: 1000;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.8); /* Tmavé prekrytie */
+                background-color: rgba(0, 0, 0, 0.85); /* Ešte tmavšie prekrytie */
                 justify-content: center;
                 align-items: center;
                 padding: 1rem;
             }
             
-            /* Trieda na zobrazenie */
             #popup-overlay.popup-show {
                 display: flex;
-                animation: popupSlideIn 0.4s ease-out forwards;
+                animation: popupSlideIn 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Trochu živšia animácia */
             }
             
-            /* Trieda na skrytie (pre animáciu) */
             #popup-overlay.popup-hide {
                 animation: popupSlideOut 0.3s ease-in forwards;
             }
 
-            /* Toto je obsah modálneho okna */
             #popup-modal {
                 position: relative;
                 background: white;
-                border-radius: 1rem; /* 16px */
+                border-radius: 1.25rem; /* Väčšie zaoblenie */
                 width: 100%;
-                max-width: 400px; /* Prispôsobená šírka */
+                max-width: 450px; /* Trochu širšie */
                 overflow: hidden;
-                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4); /* Výraznejší tieň */
                 text-align: center;
-                /* Zachovanie pôvodného okraja */
-                border: 2px solid rgba(12, 107, 217, 0.2); /* Farba z 'border-primary/20' */
+                border: 2px solid #E53E3E; /* Výrazný červený okraj pre "Akce" */
+                transform: translateZ(0); /* Pre lepšie vykresľovanie animácií */
             }
 
-            /* TOTO JE UPRAVENÝ KÓD PRE OBRÁZOK (zobrazí sa celý) */
             .popup-image-new {
                 width: 100%;
-                height: auto; /* Automatická výška pre zobrazenie celého obrázka */
-                display: block; /* Zabezpečí správne vykreslenie */
+                height: auto;
+                display: block;
+                border-bottom: 5px solid #E53E3E; /* Pridaný červený pásik pod obrázkom */
             }
             
             .popup-body-new {
-                padding: 1.5rem; /* 24px */
+                padding: 2rem 1.5rem; /* Väčší padding hore/dole */
+            }
+            
+            /* Nové štýly pre nadpis a cenu */
+            .popup-title {
+                font-size: 2.5rem; /* Väčší nadpis */
+                font-weight: 800; /* Extra bold */
+                color: #E53E3E; /* Červená farba pre Akce! */
+                line-height: 1.1;
+                margin-bottom: 0.75rem;
+                text-transform: uppercase; /* Všetko veľkými písmenami */
+                letter-spacing: -0.05em; /* Trochu stiahnuté písmo */
+            }
+
+            .popup-subtitle {
+                font-size: 1.15rem; /* Trochu väčší podnadpis */
+                color: #333;
+                margin-bottom: 0.5rem;
+                line-height: 1.4;
+            }
+            
+            .popup-price-highlight {
+                font-size: 2.8rem; /* Oveľa väčšie pre cenu */
+                font-weight: 900; /* Black */
+                color: #0c6bd9; /* Pôvodná primary farba pre kontrast */
+                display: block; /* Aby bolo na novom riadku */
+                margin-top: 0.5rem;
+                letter-spacing: -0.03em;
+            }
+
+            .popup-subtext {
+                font-size: 0.875rem; /* Menší text pre dátum */
+                color: #666;
+                margin-top: 1rem; /* Väčší odstup */
+                font-weight: 500;
+            }
+
+            /* Štýly pre tlačidlo */
+            .popup-contact-btn-new {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                whitespace-nowrap: nowrap;
+                font-size: 1.1rem; /* Väčšie písmo tlačidla */
+                font-weight: 700; /* Bold */
+                height: 3.5rem; /* Väčšia výška tlačidla */
+                border-radius: 0.75rem; /* Viac zaoblené */
+                background-color: #0c6bd9; /* Primary farba */
+                color: white;
+                padding: 0 1.75rem; /* Väčší padding */
+                width: 100%;
+                box-shadow: 0 8px 20px rgba(12, 107, 217, 0.4); /* Výraznejší tieň tlačidla */
+                transition: all 0.25s ease-in-out;
+                margin-top: 1.5rem; /* Väčší odstup od textu */
+                text-decoration: none; /* Ak by to bol <a> tag */
+            }
+            .popup-contact-btn-new:hover {
+                background-color: #0a5dbf; /* Trochu tmavšia primary farba */
+                box-shadow: 0 10px 25px rgba(12, 107, 217, 0.6);
+                transform: translateY(-2px); /* Jemný efekt pri hoveri */
             }
             
             .popup-close-new {
                 position: absolute;
-                top: 10px;
-                right: 10px;
-                font-size: 2rem; /* 32px */
+                top: 15px; /* Trochu nižšie */
+                right: 15px; /* Trochu viac vpravo */
+                font-size: 2.2rem; /* Trochu väčšie */
                 line-height: 1;
                 color: white;
                 cursor: pointer;
                 transition: all 0.2s ease-in-out;
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.6); /* Trochu tmavšie pozadie X */
                 border: none;
-                width: 36px;
-                height: 36px;
+                width: 40px; /* Väčšie tlačidlo */
+                height: 40px; /* Väčšie tlačidlo */
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 z-index: 10;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Tieň pre X */
             }
             .popup-close-new:hover {
-                background: rgba(0, 0, 0, 0.8);
-                transform: scale(1.1);
+                background: rgba(0, 0, 0, 0.9);
+                transform: scale(1.15); /* Výraznejšie zväčšenie pri hoveri */
+            }
+
+            /* Responsive adjustments for smaller screens */
+            @media (max-width: 480px) {
+                #popup-modal {
+                    max-width: 320px; /* Ešte užšie na veľmi malých obrazovkách */
+                }
+                .popup-title {
+                    font-size: 2rem;
+                }
+                .popup-subtitle {
+                    font-size: 1rem;
+                }
+                .popup-price-highlight {
+                    font-size: 2.2rem;
+                }
+                .popup-contact-btn-new {
+                    font-size: 1rem;
+                    height: 3rem;
+                }
             }
             /* --- Koniec Pop-up --- */
         </style>
@@ -622,15 +699,14 @@
         <img src="./assets/madlosedacka.jpg" alt="Akční banner" class="popup-image-new">
         
         <div class="popup-body-new">
-            <div class="mb-4">
-                <h3 class="text-2xl font-bold text-foreground mb-3">Limitovaná Akce!</h3>
-                <p class="text-base text-muted-foreground mb-2">
-                    Získejte <strong class="text-primary">madlo NEBO sedačku</strong><br>v hodnotě <strong class="text-primary">1800 Kč ZDARMA!</strong>
-                </p>
-                <p class="text-xs text-gray-500 mb-4">Platí jen do konce měsíce</p>
-            </div>
+            <h3 class="popup-title">Limitovaná Akce!</h3>
+            <p class="popup-subtitle">
+                Získejte madlo NEBO sedačku<br>
+                v hodnotě <span class="popup-price-highlight">1800 Kč ZDARMA!</span>
+            </p>
+            <p class="popup-subtext">Platí jen do konce měsíce</p>
             
-            <button data-scroll-to="contact" id="popup-contact-btn" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-semibold h-11 rounded-lg bg-primary hover:bg-primary/90 text-white px-6 py-2 w-full shadow-lg hover:shadow-xl transition-all">
+            <button data-scroll-to="contact" id="popup-contact-btn" class="popup-contact-btn-new">
                 Chci bonus zdarma →
             </button>
         </div>
