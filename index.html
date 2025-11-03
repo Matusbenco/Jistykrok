@@ -91,7 +91,8 @@
                 border: 2px solid rgba(12, 107, 217, 0.2); /* Farba z 'border-primary/20' */
             }
 
-          .popup-image-new {
+            /* TOTO JE UPRAVENÝ KÓD PRE OBRÁZOK (zobrazí sa celý) */
+            .popup-image-new {
                 width: 100%;
                 height: auto; /* Automatická výška pre zobrazenie celého obrázka */
                 display: block; /* Zabezpečí správne vykreslenie */
@@ -622,11 +623,6 @@
         
         <div class="popup-body-new">
             <div class="mb-4">
-                <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                    </svg>
-                </div>
                 <h3 class="text-2xl font-bold text-foreground mb-3">Limitovaná Akce!</h3>
                 <p class="text-base text-muted-foreground mb-2">
                     Získejte <strong class="text-primary">madlo NEBO sedačku</strong><br>v hodnotě <strong class="text-primary">1800 Kč ZDARMA!</strong>
@@ -684,7 +680,7 @@
             if (popupCloseBtn) popupCloseBtn.addEventListener('click', closePopup);
             if (popupContactBtn) popupContactBtn.addEventListener('click', closePopup);
             
-            // NOVÝ KÓD: Zatvorenie kliknutím na pozadie (overlay)
+            // Kód pre zatvorenie kliknutím na pozadie (overlay)
             if (popupOverlay) {
                 popupOverlay.addEventListener('click', function(event) {
                     // event.target je element, na ktorý sme reálne klikli
