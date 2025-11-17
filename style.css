@@ -313,3 +313,78 @@
 body, h1, h2, h3, h4, h5, p, span, div, button, a {
     font-family: var(--font-geist-sans) !important;
 }
+/* === OPRAVA CENOVÉHO BLOKU PRE MOBIL === */
+
+/* 1. Nastavenie predvolených (veľkých) veľkostí pre desktop */
+.akcni-cena {
+    font-size: 3rem; /* 48px */
+    font-weight: 800;
+    color: #dc2626; /* Červená */
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.uspora-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+    color: #ef4444; /* Svetlejšia červená */
+    margin-top: 0.75rem;
+}
+
+/* 2. Media query pre mobilné zariadenia (obrazovky menšie ako 480px) */
+@media (max-width: 480px) {
+    
+    .akcni-cena {
+        /* Zmenšíme písmo na mobile, aby sa zmestilo */
+        font-size: 2.25rem; /* 36px */
+    }
+
+    .uspora-text {
+        /* Zmenšíme písmo úspory */
+        font-size: 1.125rem; /* 18px */
+    }
+}
+/* === DODATOČNÉ OPRAVY PRE CENOVÝ BLOK NA MOBILE === */
+
+@media (max-width: 480px) {
+
+    /* Oprava nadpisu "Získejte maximální bezpečí..." */
+    .p-6 h3.text-xl {
+        /* Povolíme textu, aby sa lámal, ale zarovnáme ho na začiatok */
+        display: block; /* Zrušíme flexbox, ktorý spôsobuje prekrývanie */
+        text-align: left; /* Zarovnáme text doľava */
+        font-size: 1.125rem; /* Zmenšíme ho trochu */
+    }
+
+    .p-6 h3.text-xl svg {
+        /* Ikonka bude nad textom, alebo sa prispôsobí, ak sa text zlomí */
+        margin-right: 0.5rem; /* Malá medzera, ak bude text vedľa */
+        margin-bottom: 0.5rem; /* Malá medzera pod ikonu */
+        float: left; /* Ikonka sa prichytí naľavo */
+    }
+
+    /* Oprava úspory "Ušetříte 5 000 Kč!" */
+    .uspora-text {
+        /* Zmeníme to, ako sa ikonka a text zarovnávajú */
+        align-items: flex-start; /* Ikonka sa zarovná hore */
+        flex-direction: column; /* Ikonka bude nad textom */
+        gap: 0.25rem; /* Zmenšíme medzeru */
+        margin-left: 0.5rem; /* Trochu odsadenie, aby ikonka nebola nalepená naľavo */
+    }
+
+    .uspora-text svg {
+        /* Ikonka bude mať normálnu veľkosť */
+        height: 1.5rem; /* 24px */
+        width: 1.5rem; /* 24px */
+        flex-shrink: 0; /* Nebude sa zmenšovať */
+    }
+
+    .uspora-text span {
+        /* Text "Ušetříte..." sa zlomí ak treba */
+        display: block; 
+        line-height: 1.2;
+    }
+}

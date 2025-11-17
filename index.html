@@ -78,13 +78,13 @@
         <p class="text-2xl md:text-3xl font-bold text-white/95 mb-8 max-w-4xl mx-auto drop-shadow-lg animate-fade-in-delay-2">Úspora statisíců korun!</p>
 
          <div class="mb-8 animate-fade-in-delay-3">
-            <div class="inline-flex items-center gap-3 bg-white/95 backdrop-blur-sm rounded-2xl px-8 py-4 shadow-2xl hover:scale-105 transition-all duration-300 hover:shadow-3xl">
+            <div class="inline-flex items-center gap-3 bg-white/95 backdrop-blur-sm rounded-2xl px-4 sm:px-8 py-4 ...">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-8 w-8 text-primary animate-pulse" aria-hidden="true">
                     <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
                 </svg>
                 <div class="text-left">
                     <div class="text-sm text-gray-600 font-medium">Volejte ihned</div>
-                    <div class="text-3xl font-bold text-gray-900 tracking-wide">+421 905 351 100</div>
+                    <div class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-wide">+421 905 351 100</div>
                 </div>
             </div>
         </div>
@@ -111,23 +111,61 @@
     </div>
 </section>
 
-        <section id="solution" class="py-16 px-4">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="animate-fade-in">
-                        <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">Naše řešení: Bezpečný vstup o šířce 60 cm</h2>
-                        <p class="text-lg text-muted-foreground leading-relaxed mb-6">Toto nejsou JEN dvířka. Naše řešení nepotřebuje pohyblivé části, a proto má dlouhou životnost, mnohem delší než dvířka. Místo drahé rekonstrukce vám do vany vyřežeme a vodotěsně nainstalujeme elegantní, nízký vstup.</p>
-                        <p class="text-lg font-semibold text-primary">Získáte maximální bezpečí za zlomek ceny.</p>
-                  <p class="text-xl font-bold text-gray-500 line-through">Původní cena: 24 990 KČ</p>
-<p class="text-2xl font-bold text-primary mt-1">Akční cena: 19 990 KČ</p>
-<p class="text-lg font-semibold text-primary">Ušetříte 5 000 KČ (Akce do 31.12.2025)</p>
-</div>
-                    <div class="relative animate-fade-in-delay">
-                        <img src="./assets/P.jpg" alt="Elegantní nízký vstup do vany" class="rounded-lg shadow-xl w-full hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
+       <section id="solution" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+        
+        <div class="animate-fade-in max-w-3xl mx-auto text-center"> 
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Naše řešení: Bezpečný vstup o šířce 60 cm
+            </h2>
+            <p class="text-lg text-muted-foreground leading-relaxed mb-6">
+                Toto nejsou JEN dvířka. Naše řešení nepotřebuje pohyblivé části, a proto má dlouhou životnost, mnohem delší než dvířka. Místo drahé rekonstrukce vám do vany vyřežeme a vodotěsně nainstalujeme elegantní, nízký vstup.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+            
+            <div class="animate-fade-in">
+                <div class="p-6 bg-slate-50 rounded-lg shadow-inner border">
+    
+                    <h3 class="text-xl font-semibold text-primary mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag h-6 w-6">
+                            <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414L12.586 22l8.708-8.708a2 2 0 0 0 0-2.828l-7.172-7.172Z"></path>
+                            <path d="M7 7h.01"></path>
+                        </svg>
+                        Získejte maximální bezpečí za zlomek ceny!
+                    </h3>
+
+                    <p class="text-lg text-muted-foreground line-through mb-1">
+                        Původní cena: 24 990 Kč
+                    </p>
+                    
+                    <p class="akcni-cena">
+                        Akční cena:<br class="sm:hidden"> 19 990 Kč
+                    </p>
+                    
+                    <div class="uspora-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down h-6 w-6">
+                            <polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline>
+                            <polyline points="16 17 22 17 22 11"></polyline>
+                        </svg>
+                        <span>Ušetříte 5 000 Kč!</span>
                     </div>
+                    
+                    <p class="text-base font-normal mt-2" style="color: #4b5563;">
+                        (Akce platí do 31.12.2025)
+                    </p>
+
                 </div>
             </div>
-        </section>
+
+            <div class="relative animate-fade-in-delay">
+                <img src="./assets/P.jpg" alt="Elegantní nízký vstup do vany" class="rounded-lg shadow-xl w-full object-cover aspect-[4/3] md:aspect-auto hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <section id="benefits" class="py-16 px-4 bg-slate-50">
             <div class="max-w-6xl mx-auto">
@@ -443,7 +481,7 @@
                     </ul>
                 </div>
                 
-                <form class="space-y-6" action="https://formspree.io/f/xyzjaepv" method="POST">
+                <form class="space-y-6" action="https://formspree.io/f/xyzlrlad" method="POST">
                     <div>
                         <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="name">Jméno *</label>
                         <input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 hover:border-primary/50 focus:border-primary transition-colors duration-200" id="name" required="" name="name">
@@ -479,8 +517,7 @@
                         </svg>
                     </div>
                     <div class="flex items-center justify-center gap-2">
-                        <img src="./assets/logo_istykrok.png" alt="Logo Jistý Krok" class="h-6">
-                        <h3 class="font-semibold tracking-tight text-xl">Matúš B.</h3>
+                                                <h3 class="font-semibold tracking-tight text-xl">Matúš B.</h3>
                     </div>
                 </div>
                 <div class="p-6 pt-0">
@@ -496,8 +533,7 @@
                         </svg>
                     </div>
                     <div class="flex items-center justify-center gap-2">
-                        <img src="./assets/logo_istykrok.png" alt="Logo Jistý Krok" class="h-6">
-                        <h3 class="font-semibold tracking-tight text-xl">Jakub H.</h3>
+                                                <h3 class="font-semibold tracking-tight text-xl">Jakub H.</h3>
                     </div>
                 </div>
                 <div class="p-6 pt-0">
@@ -513,8 +549,7 @@
                         </svg>
                     </div>
                     <div class="flex items-center justify-center gap-2">
-                        <img src="./assets/logo_istykrok.png" alt="Logo Jistý Krok" class="h-6">
-                        <h3 class="font-semibold tracking-tight text-xl">Ján F.</h3>
+                                               <h3 class="font-semibold tracking-tight text-xl">Ján F.</h3>
                     </div>
                 </div>
                 <div class="p-6 pt-0">
@@ -530,8 +565,7 @@
                         </svg>
                     </div>
                     <div class="flex items-center justify-center gap-2">
-                        <img src="./assets/logo_istykrok.png" alt="Logo Jistý Krok" class="h-6">
-                        <h3 class="font-semibold tracking-tight text-xl">Zuzana D.</h3>
+                                                <h3 class="font-semibold tracking-tight text-xl">Zuzana D.</h3>
                     </div>
                 </div>
                 <div class="p-6 pt-0">
@@ -643,7 +677,7 @@
                     </div>
                 </div>
                 <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400 animate-fade-in-delay-3">
-                    <p>© 2025 Jistý Krok. Všechna práva vyhrazena.</p>
+                    <p>© 2021 Jistý Krok. Všechna práva vyhrazena.</p>
                 </div>
             </div>
         </footer>
@@ -670,7 +704,7 @@
 
             <p class="popup-form-title">Zanechte nám kontakt a my se Vám ozveme:</p>
             
-            <form class="popup-form" action="https://formspree.io/f/xyzjaepv" method="POST">
+            <form class="popup-form" action="https://formspree.io/f/xyzlrlad" method="POST">
                 <input type="text" name="name" class="popup-input" placeholder="Vaše jméno *" required>
                 <input type="email" name="email" class="popup-input" placeholder="Váš e-mail *" required>
                 <input type="tel" name="phone" class="popup-input" placeholder="Váš telefon *" required>
