@@ -280,3 +280,36 @@
 .faq-item.aktivni .faq-symbol {
   transform: rotate(45deg); /* Zmení + na x */
 }
+/* === PREPÍSANIE PRIMÁRNEJ FARBY (Zelená -> Modrá) === */
+
+/* Toto zmení farbu pozadia (tlačidlá, banner) */
+.bg-primary {
+    background-color: #0c6bd9 !important;
+}
+
+/* Toto zmení farbu pozadia pri prejdení myšou */
+.hover\:bg-primary\/90:hover {
+    /* Použijeme tmavšiu modrú, ktorú už máte v pop-upe */
+    background-color: #0a5dbf !important; 
+}
+
+/* Toto zmení farbu textu (ak by bolo niekde text-primary) */
+.text-primary {
+    color: #0c6bd9 !important;
+}
+
+/* Toto zmení farbu rámčeka (pre istotu) */
+.border-primary {
+     border-color: #0c6bd9 !important;
+}
+/* === OPRAVA PÍSMA (Vynútenie jednotného fontu) === */
+
+/*
+ * Táto oprava zaisťuje, že celá stránka použije 
+ * moderný "sans-serif" font (Geist Sans) 
+ * a nie "monospace" font (Geist Mono), ktorý sa 
+ * chybne zobrazuje v niektorých nadpisoch.
+ */
+body, h1, h2, h3, h4, h5, p, span, div, button, a {
+    font-family: var(--font-geist-sans) !important;
+}
