@@ -351,39 +351,36 @@ body, h1, h2, h3, h4, h5, p, span, div, button, a {
 
 @media (max-width: 480px) {
 
-    /* Oprava nadpisu "Získejte maximální bezpečí..." */
-    .p-6 h3.text-xl {
+    /* OPRAVA: Pridané #solution, aby sa to týkalo LEN sekcie riešenia a nepokazilo Výhody */
+    #solution .p-6 h3.text-xl {
         /* Povolíme textu, aby sa lámal, ale zarovnáme ho na začiatok */
-        display: block; /* Zrušíme flexbox, ktorý spôsobuje prekrývanie */
-        text-align: left; /* Zarovnáme text doľava */
-        font-size: 1.125rem; /* Zmenšíme ho trochu */
+        display: block; 
+        text-align: left; /* Toto bolo to, čo kazilo zarovnanie vo výhodách */
+        font-size: 1.125rem; 
     }
 
-    .p-6 h3.text-xl svg {
+    #solution .p-6 h3.text-xl svg {
         /* Ikonka bude nad textom, alebo sa prispôsobí, ak sa text zlomí */
-        margin-right: 0.5rem; /* Malá medzera, ak bude text vedľa */
-        margin-bottom: 0.5rem; /* Malá medzera pod ikonu */
-        float: left; /* Ikonka sa prichytí naľavo */
+        margin-right: 0.5rem; 
+        margin-bottom: 0.5rem; 
+        float: left; 
     }
 
     /* Oprava úspory "Ušetříte 5 000 Kč!" */
     .uspora-text {
-        /* Zmeníme to, ako sa ikonka a text zarovnávajú */
-        align-items: flex-start; /* Ikonka sa zarovná hore */
-        flex-direction: column; /* Ikonka bude nad textom */
-        gap: 0.25rem; /* Zmenšíme medzeru */
-        margin-left: 0.5rem; /* Trochu odsadenie, aby ikonka nebola nalepená naľavo */
+        align-items: flex-start; 
+        flex-direction: column; 
+        gap: 0.25rem; 
+        margin-left: 0.5rem; 
     }
 
     .uspora-text svg {
-        /* Ikonka bude mať normálnu veľkosť */
-        height: 1.5rem; /* 24px */
-        width: 1.5rem; /* 24px */
-        flex-shrink: 0; /* Nebude sa zmenšovať */
+        height: 1.5rem; 
+        width: 1.5rem; 
+        flex-shrink: 0; 
     }
 
     .uspora-text span {
-        /* Text "Ušetříte..." sa zlomí ak treba */
         display: block; 
         line-height: 1.2;
     }
