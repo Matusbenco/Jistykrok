@@ -8,7 +8,6 @@
     animation: marquee 40s linear infinite;
     white-space: nowrap;
 }
-
 /* === Vyskakovací banner (Pop-up) === */
 @keyframes popupSlideIn {
     from { 
@@ -385,3 +384,4 @@ body, h1, h2, h3, h4, h5, p, span, div, button, a {
         line-height: 1.2;
     }
 }
+
